@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(25, 33, 59);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+.heading{
+    color: white;
+    filter: drop-shadow(5px 5px 0 red);
+    font-size:5rem;
+    width: 100vw;
+    text-align: center;
+}
+.drums{
+    /* border: 2px solid red; */
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30vh;
+}
+.drum{
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 80%;
+    width: 13%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: none;
+    height: 80%;
+    width: 80%;
+    border-radius: 30px;
+    font-size: 6rem;
+    font-weight: bolder;
+    color: rgb(241, 27, 152);
+    text-shadow: 4px 4px 0 purple;
+    background-color: white;
+
+}
+.w{background-image: url("./images/tom1.png");background-repeat: no-repeat;background-size: 110%;}
+.a{background-image: url("./images/tom2.png");background-repeat: no-repeat;background-size: 110%;}
+.s{background-image: url("./images/tom3.png");background-repeat: no-repeat;background-size: 110%;}
+.d{background-image: url("./images/tom4.png");background-repeat: no-repeat;background-size: 110%;}
+.j{background-image: url("./images/snare.png");background-repeat: no-repeat;background-size: 110%;}
+.k{background-image: url("./images/crash.png");background-repeat: no-repeat; background-size: 110%;}
+.l{background-image: url("./images/kick.png");background-repeat: no-repeat;background-size: 150%;}
+@media(max-width:600px){
+    .heading{
+        color: white;
+        filter: drop-shadow(5px 5px 0 red);
+        font-size:3rem;
+        width: 100vw;
+        text-align: center;
+    }
+    body{
+        background-color: rgb(25, 33, 59);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+       
+    }
+    .drums{
+        /* border: 2px solid red; */
+    
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        height: 300vh;
+    }
+    .drum{
+        background-color: rgba(255, 255, 255, 0.2);
+        height: 13%;
+        width: 80%;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+}
