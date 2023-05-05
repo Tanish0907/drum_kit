@@ -40,11 +40,18 @@ const makesound = (btnpress) => {
 console.log(btn)
 btn.forEach(button => {
     button.addEventListener(
-        "click",()=>{makesound(button.innerHTML)}
+        "click",
+        ()=>{makesound(button.innerHTML);
+        button.classList.toggle("active")
+        setTimeout(()=>{button.classList.toggle("active")},250)
+        
+        }
     )
     
 });
 document.addEventListener("keydown", (event) => {
   makesound(event.key);
+  const sbtn= document.querySelector("."+event.key);
+  sbtn.classList.toggle("active")
+  setTimeout(()=>{sbtn.classList.toggle("active")},250)
 });
-w
